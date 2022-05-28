@@ -3,6 +3,7 @@
     <head>
         <title>Ezra Alannathaniel</title>
         <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -13,6 +14,64 @@
     <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.hero {
+    
+    background: url(../ezra1905.github.io/img/hero.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden; }
+
+.cloud{
+    height: 200px;
+    width: 500%;
+    background: url(../ezra1905.github.io/img/cloud.png);
+    display: block;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: moveRight 30s linear infinite; }
+
+
+@keyframes moveRight{
+    100%{transform: translateX(-3000px);}
+}
+
+.ufo {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(-50%);
+    z-index: 2;
+    animation: suspension 1s linear infinite;
+     }
+
+.ufo img {
+    animation: moveLeft 8s linear infinite;
+}
+
+
+
+@keyframes moveLeft{
+    100%{transform: translateX(4000px);}
+}
+
+@keyframes suspension{
+    100%{transform: translateY(-30px);}
+
+    50%{transform: translateY(10px);}
+
+    0%{transform: translateY(-30px);}
+}
+
+
+
+
 
         .navbar {
             font-family: 'Poppins', sans-serif;
@@ -44,6 +103,8 @@
         .contact {
             font-family: 'Poppins', sans-serif;
         }
+
+
 
 .carousel-item::before {
     content: "";
@@ -77,10 +138,11 @@
 .slider-btn .btn {
     background-color: #0d6efd;
     color: white;
-    border-radius: 4px;
+    border-radius: 32px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
 }
+
 
 
 .home-text .static-txt{
@@ -238,6 +300,21 @@
         </nav>
         <!-- navbar end -->
 
+        <!-- section hero start -->
+        <section class="hero-banner bg-light pt-5 px-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="cloud">
+                            <div class="ufo">
+                                <img src="../ezra1905.github.io/img/ufo.png">
+                    </div>
+                </div>      
+            </div>
+        </section>
+                  
+         <!-- section hero end -->
+         
         <!-- home section start -->
         <section class="home py-5" id="home">
             <div class="container-lg">
@@ -252,8 +329,10 @@
                             <h1 class="fw-bold text-primary text-uppercase dynamic-txts">
                                 <li><span>Ezra Alannathaniel</span></li>
                             </h1>
-                            <p class="fw-normal fs-4 ps-3">UI/UX Designer | Front-End Developer</p>
-                            <a href="#projects" class="btn btn-primary px-3 mt-2 ms-3">My Portfolio</a>
+                            <p class="fw-normal fs-4 ps-3">UI/UX Designer</p>
+                            <div class="slider-btn">
+                                <a class="btn btn-1" href="#projects">My Projects</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -282,8 +361,8 @@
                                 Development. I'am musician too, you can reach my music cover on my instagram down below. Interested on precision layouting, grids, and perfect combination visual color. I applied simple, elegant, and fresh
                                 interface in my design style. I hope we can work and improving our skills together as a team.
                             </p>
-                            <div class="col-lg-12">
-                                <a href="cv/cv.jpg" class="animated bounceInRight btn btn-primary" style="animation-delay: 3s" download>Download CV</a>
+                            <div class="slider-btn">
+                                <a class="btn btn-1 animated bounceInRight" href="cv/cv.jpg" style="animation-delay: 3s" download>Download CV</a>
                             </div>
                         </div>
                     </div>
